@@ -15,7 +15,6 @@ function App() {
   const [money, setMoney] = useState<MoneyType[]>(() => {
     return localStorageModel.getLocalStorage();
   });
-  const [deletePanel, setDeletePanel] = useState<boolean>(false)
 
   const formatted = (income: number, hours: number) => {
     if (!Number.isNaN(income * hours)) {
